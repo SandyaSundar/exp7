@@ -11,17 +11,20 @@ Quartus prime
 **JK Flip-Flop**
 
 JK flip-flop is the modified version of SR flip-flop. It operates with only positive clock transitions or negative clock transitions. The circuit diagram of JK flip-flop is shown in the following figure.
-JK Flip Flop Logic Circuit
+
+![alt text](<JK Flip Flop Logic Circuit.png>)
 
 This circuit has two inputs J & K and two outputs Qtt & Qtt’. The operation of JK flip-flop is similar to SR flip-flop. Here, we considered the inputs of SR flip-flop as S = J Qtt’ and R = KQtt in order to utilize the modified SR flip-flop for 4 combinations of inputs. The following table shows the state table of JK flip-flop.
 
-JK Flip Flop Table 1
+![alt text](<JK Flip Flop Table 1.png>)
 
 Here, Qtt & Qt+1t+1 are present state & next state respectively. So, JK flip-flop can be used for one of these four functions such as Hold, Reset, Set & Complement of present state based on the input conditions, when positive transition of clock signal is applied. The following table shows the characteristic table of JK flip-flop. Present Inputs Present State Next State
-JK Flip Flop Table 2
+
+![alt text](<JK Flip Flop Table 2.png>)
 
 By using three variable K-Map, we can get the simplified expression for next state, Qt+1t+1. Three variable K-Map for next state, Qt+1t+1 is shown in the following figure.
-JK Flip Flop K map
+
+![alt text](<Screenshot 2025-12-10 123326.png>)
 
 The maximum possible groupings of adjacent ones are already shown in the figure. Therefore, the simplified expression for next state Qt+1t+1 is Q(t+1)=JQ(t)′+K′Q(t)Q(t+1)=JQ(t)′+K′Q(t)
 
@@ -35,10 +38,17 @@ The maximum possible groupings of adjacent ones are already shown in the figure.
 
 **PROGRAM**
 
-/* Program for flipflops and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber: */
+![alt text](<JK Flip Flop Program.png>)
+
+Developed by: Sandya S          RegisterNumber: 25017264
 
 **RTL LOGIC FOR FLIPFLOPS**
 
+![alt text](<JK Flip Flop RTL.png>)
+
 **TIMING DIAGRAMS FOR FLIP FLOPS**
 
+![alt text](<Screenshot 2025-12-12 210002.png>)
+
 **RESULTS**
+Thus JK Flip Flop is implemented using verilog.
